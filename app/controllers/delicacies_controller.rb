@@ -69,6 +69,6 @@ class DelicaciesController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def delicacy_params
-      params.require(:delicacy).permit(:name, :desc, :price, :weight, :dimensions, :image)
+      params.require(:delicacy).permit(:name, :desc, :price, :weight, :dimensions, :image, :city_id)
     end
 end

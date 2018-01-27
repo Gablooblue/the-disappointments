@@ -9,5 +9,7 @@
 	</div>
     </div>
     <h4 class = "text-center">Delicacies</h4>
-    <%= render @delicacies %>
+    <% @city.delicacies.each do |delicacy| %>
+	<%= render 'delicacies/delicacy', delicacy: delicacy%>
+    <% end %>
 </div>
