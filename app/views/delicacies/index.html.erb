@@ -1,37 +1,16 @@
-<p id="notice"><%= notice %></p>
-
-<h1>Delicacies</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Desc</th>
-      <th>Price</th>
-      <th>Weight</th>
-      <th>Dimensions</th>
-      <th>Image</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class = "container">
     <% @delicacies.each do |delicacy| %>
-      <tr>
-        <td><%= delicacy.name %></td>
-        <td><%= delicacy.desc %></td>
-        <td><%= delicacy.price %></td>
-        <td><%= delicacy.weight %></td>
-        <td><%= delicacy.dimensions %></td>
-        <td><%= delicacy.image %></td>
-        <td><%= link_to 'Show', delicacy %></td>
-        <td><%= link_to 'Edit', edit_delicacy_path(delicacy) %></td>
-        <td><%= link_to 'Destroy', delicacy, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+	<div class = "col-md-4">
+	    <div class = "card">
+		<div class = "card-body">
+		    <h4 class = "card-title">
+			<%= delicacy.name %>
+		    </h4>
+		    <p class = "card-text">
+			<%= delicacy.desc %>
+		    </p>
+		</div>
+	    </div>
+	</div>
     <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Delicacy', new_delicacy_path %>
+</div>
