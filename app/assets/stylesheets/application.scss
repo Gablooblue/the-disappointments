@@ -1,7 +1,15 @@
+@import "bootstrap/colors";
 @import "bootstrap/variables";
 @import "bootstrap";
 
 #padding-default-top{
     padding-top: 60px;
+}
+
+@font-face{
+    font-family: "Lato-Thin";
+    src: url(font-path("Lato-Thin.ttf"));
+    font-style:normal;
+    font-weight:normal;
 }
 

@@ -7,6 +7,7 @@ class CreateDelicacies < ActiveRecord::Migration[5.1]
       t.float :weight
       t.string :dimensions
       t.string :image
+      t.integer :city_id
 
       t.timestamps
     end

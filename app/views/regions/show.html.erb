@@ -8,6 +8,8 @@
 	    </div>
 	</div>
     </div>
-    <h4 class = "text-center">Places in <%= @region.name %></h4>
-    <%= render @region.cities %>
+    <h4 class = "text-center py-4">Places in <%= @region.name %></h4>
+    <div class = "row">
+	<%= render @region.cities %>
+    </div>
 </div>

@@ -27,6 +27,7 @@ ActiveRecord::Schema.define(version: 20180127120230) do
     t.float "weight"
     t.string "dimensions"
     t.string "image"
+    t.integer "city_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
