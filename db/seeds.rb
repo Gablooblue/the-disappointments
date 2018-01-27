@@ -5,3 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+#
+#
+Region.create([{name: "Luzon"}, {name: "Visayas"}, {name: "Mindanao"}])
+
+City.create([{name: "Baguio", region_id: 1}, {name: "Pampanga", region_id: 2}])
+
+Delicacy.create([{name: "Ube Jam", city_id: 1, desc: "Best ube jam ever", weight: 23, dimensions: "2x2x2", price: 133.41}])
