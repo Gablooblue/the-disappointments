@@ -1,0 +1,47 @@
+<%= form_with(model: delicacy, local: true) do |form| %>
+  <% if delicacy.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(delicacy.errors.count, "error") %> prohibited this delicacy from being saved:</h2>
+
+      <ul>
+      <% delicacy.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :name %>
+    <%= form.text_field :name, id: :delicacy_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :desc %>
+    <%= form.text_area :desc, id: :delicacy_desc %>
+  </div>
+
+  <div class="field">
+    <%= form.label :price %>
+    <%= form.text_field :price, id: :delicacy_price %>
+  </div>
+
+  <div class="field">
+    <%= form.label :weight %>
+    <%= form.text_field :weight, id: :delicacy_weight %>
+  </div>
+
+  <div class="field">
+    <%= form.label :dimensions %>
+    <%= form.text_field :dimensions, id: :delicacy_dimensions %>
+  </div>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.text_field :image, id: :delicacy_image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
