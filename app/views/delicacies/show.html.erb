@@ -1,34 +1,21 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @delicacy.name %>
-</p>
-
-<p>
-  <strong>Desc:</strong>
-  <%= @delicacy.desc %>
-</p>
-
-<p>
-  <strong>Price:</strong>
-  <%= @delicacy.price %>
-</p>
-
-<p>
-  <strong>Weight:</strong>
-  <%= @delicacy.weight %>
-</p>
-
-<p>
-  <strong>Dimensions:</strong>
-  <%= @delicacy.dimensions %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @delicacy.image %>
-</p>
-
-<%= link_to 'Edit', edit_delicacy_path(@delicacy) %> |
-<%= link_to 'Back', delicacies_path %>
+<div class = "container" id = "padding-default-top">
+    <div class = "col-md-12">
+	<div class = "card">
+	    <div class = "card-body">
+		<h3 class = "card-title">
+		    <%= @delicacy.name %>
+		</h3>
+		<h4 class = "card-text">
+		    <%= @delicacy.price %>
+		</h4>
+		<p class = "card-text">
+		    <%= @delicacy.desc %>
+		</p>
+		<p class = "card-text">
+		    Weight: <%= @delicacy.weight %> 
+		    Dimensions: <%= @delicacy.dimensions %>
+		</p>
+	    </div>
+	</div>
+    </div>
+</div>
