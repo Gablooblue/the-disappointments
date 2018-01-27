@@ -1,20 +1,26 @@
 <div class = "container" id = "padding-default-top">
-    <div class = "col-md-12">
+    <div class = "card-group">
+	<div class = "card">
+	    <%= image_tag @delicacy.image, class: "card-img-top", alt: "Card image cap", size: "500x500" %>
+	</div>
 	<div class = "card">
 	    <div class = "card-body">
 		<h3 class = "card-title">
 		    <%= @delicacy.name %>
 		</h3>
-		<h4 class = "card-subtitle text-muted mb-2">
+		<h4 class = "card-subtitle text-primary mb-2 ">
 		    <%= @delicacy.price %> PHP
 		</h4>
 		<p class = "card-text">
 		    <%= @delicacy.desc %>
 		</p>
-		<p class = "card-text">
+		<small class = "card-text text-muted">
 		    Weight: <%= @delicacy.weight %> 
 		    Dimensions: <%= @delicacy.dimensions %>
-		</p>
+		</small>
+		<p class = "py-3">
+		    <%= link_to "Place Order", "#", class: "btn btn-success "%>
+	    </p>
 	    </div>
 	</div>
     </div>

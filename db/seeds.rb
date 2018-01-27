@@ -11,4 +11,6 @@ Region.create([{name: "Luzon"}, {name: "Visayas"}, {name: "Mindanao"}])
 
 City.create([{name: "Baguio", region_id: 1}, {name: "Pampanga", region_id: 2}])
 
-Delicacy.create([{name: "Ube Jam", city_id: 1, desc: "Best ube jam ever", weight: 23, dimensions: "2x2x2", price: 133.41}])
+Delicacy.create([
+    {name: "Ube Jam", city_id: 1, desc: "The best ube jam in Baguio", weight: 23, dimensions: "2x2x2", price: 133.41, image: "ubejam_1.jpg"}, 
+    {name: "Choco flakes", city_id: 1, desc: "Sweet choco flakes from Baguio", weight: 42, dimensions:"3x3x3", price: 147, image:"choco_flakes1.jpg"}])
