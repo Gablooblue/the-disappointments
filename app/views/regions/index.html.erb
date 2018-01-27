@@ -1,11 +1,3 @@
-<div class = "container">
-    <% @regions.each do |region| %>
-	<div class = "card">
-	    <div class = "card-body">
-		<h3 class = "card-title">
-		    <%= region.name %>
-		</h3>
-	    </div>
-	</div>
-    <% end %>
+<div class = "container" id= "padding-default-top">
+    <%= render @regions %>
 </div>

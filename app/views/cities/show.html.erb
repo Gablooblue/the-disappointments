@@ -1,19 +1,13 @@
-<p id="notice"><%= notice %></p>
-
-<p>
-  <strong>Name:</strong>
-  <%= @city.name %>
-</p>
-
-<p>
-  <strong>Region:</strong>
-  <%= @city.region_id %>
-</p>
-
-<p>
-  <strong>Image:</strong>
-  <%= @city.image %>
-</p>
-
-<%= link_to 'Edit', edit_city_path(@city) %> |
-<%= link_to 'Back', cities_path %>
+<div class = "container" id = "padding-default-top">
+    <div class = "col-md-12">
+	<div class = "card">
+	    <div class = "card-body">
+		<h3 class = "card-title">
+		    <%= @city.name %>
+		</h3>
+	    </div>
+	</div>
+    </div>
+    <h4 class = "text-center">Delicacies</h4>
+    <%= render @delicacies %>
+</div>

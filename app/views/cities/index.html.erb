@@ -1,13 +1,3 @@
-<div class = "container">
-    <% @cities.each do |city| %>
-	<div class = "col-md-4">
-	    <div class = "card">
-		<div class = "card-body">
-		    <h4 class = "card-title">
-			<%= city.name %>
-		    </h4>
-		</div>
-	    </div>
-	</div>
-    <% end %>
+<div class = "container" id="padding-default-top">
+    <%= render @cities %>
 </div>
