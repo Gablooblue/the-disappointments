@@ -1,3 +1,36 @@
-<div style="background-color: 'white';">
-    <%= image_tag "map.png"%>
+<head>
+<meta name="viewport" content="height=device-height, initial-scale=1">
+    
+    <title>Juan Chow - Satisfy your craving</title>
+    <%= stylesheet_link_tag    'splash', media: 'all', 'data-turbolinks-track': 'reload' %>
+</head>
+
+<div class = "container-fluid text-center pd-4" >
+    <div style="background: #FFF;">
+	<h1 class="text-muted">Satisfy your craving</h1>
+	<%= image_tag "map.png", class: "text-center py-4", size:'500x500' %>
+    </div>
 </div>
+
+<div class = "container-fluid py-4">
+    <div style="background: #FFF;">
+	<div class = "text-center">
+	    <%= image_tag "logo.png", size:"400x100" %>
+	</div>
+	<p class = 'text-center'>
+	    Unable to locate your craving in the map? Or you're just bored and want to learn about Juan Chow?
+	</p>
+
+	<p class = "text-center">
+	    Juan Chow aims to give any Juan their chow for local delicacies. Not only would you get to satisfy your craving for Filipino food. You'll also be able to taste and appreciate their culture and help small business owners. Go on, fulfill your hunger.
+	</p>
+
+	<p class = "text-center">
+	    LOOK! We have a search bar too!
+	</p>
+	<form class="pb-2" >
+	    <input class="form-control" type="text" placeholder="Search" id="search">
+	</form>
+    </div>
+</div>
+
