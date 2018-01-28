@@ -5,7 +5,17 @@
     font-weight:normal;
 }
 
+@font-face{
+    font-family: "Lato-Regular";
+    src: url(font-path("Lato-Regular.ttf"));
+    font-style:normal;
+    font-weight:normal;
+}
 $font-family-sans-serif: "Lato-Thin", sans-serif;
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato-Regular", sans-serif !IMPORTANT;
+}
 
 
 $navbar-link-hover-color: $crevice;
