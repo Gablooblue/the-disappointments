@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Kyah Pabili Kyah</title>
+    <title>Juan Chow</title>
     <%= csrf_meta_tags %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -9,19 +9,19 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="#">JUANCHOW </a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<a class="navbar-left" href="/"><%= image_tag "logo.png", size: '200x50' %></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
+        <ul class="navbar-nav mr-auto pl-2">
           <li class="nav-item">
-            <a class="nav-link" href="#">Explore </a>
+	    <%= link_to "Explore", cities_path, class:'nav-link' %>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Products </a>
+	    <%= link_to "Products", delicacies_path, class:'nav-link' %>
           </li>
         </ul>
       </div>

@@ -6,3 +6,15 @@
 }
 
 $font-family-sans-serif: "Lato-Thin", sans-serif;
+
+
+$navbar-link-hover-color: $crevice;
+
+.navbar-link:hover {
+    color: $crevice !IMPORTANT; 
+
+}
+
+#nav:hover {
+    color: 'white' !IMPORTANT;
+}

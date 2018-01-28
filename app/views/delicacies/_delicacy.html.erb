@@ -1,5 +1,6 @@
 <div class = "col-4 pb-4">
     <div class = "card">
+	<%= image_tag delicacy.image, class: "card-img-top", alt: "Card image cap", size: "300x300"%>
 	<div class = "card-body">
 	    <h4 class = "card-title">
 		<%= link_to delicacy.name, city_delicacy_path(delicacy.city, delicacy) %>
@@ -7,6 +8,7 @@
 	    <p class = "card-text">
 		<%= delicacy.desc %>
 	    </p>
+	    <%= link_to "View product", delicacy_path(delicacy), class: "btn btn-primary"%>
 	</div>
     </div>
 </div>
