@@ -10,13 +10,13 @@
 Region.create([{name: "Luzon"}, {name: "Visayas"}, {name: "Mindanao"}])
 
 City.create([
-    {name: "Baguio", region_id: 1, image: "Baguio.png"},       #1
-    {name: "Pampanga", region_id: 1, image: "Pampanga.png"},   #2
-    {name: "Iloilo", region_id: 2, image: "iloilo1.jpg"},      #3
-    {name: "Davao", region_id: 3, image: "Davao.jpg"},         #4
-    {name: "Zamboanga", region_id: 3, image: "Zamboanga.jpg"}, #5
-    {name: "Cebu", region_id: 2, image: "Cebu.jpg"},           #6
-    {name: "Vigan", region_id: 1, image: "Vigan.jpg"}])        #7
+    {name: "Baguio", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", region_id: 1, image: "Baguio.png"},       #1
+    {name: "Pampanga", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", region_id: 1, image: "Pampanga.png"},   #2
+    {name: "Iloilo", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", region_id: 2, image: "iloilo1.jpg"},      #3
+    {name: "Davao", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", region_id: 3, image: "Davao.jpg"},         #4
+    {name: "Zamboanga", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", region_id: 3, image: "Zamboanga.jpg"}, #5
+    {name: "Cebu", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", region_id: 2, image: "Cebu.jpg"},           #6
+    {name: "Vigan", desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", region_id: 1, image: "Vigan.jpg"}])        #7
 
 Delicacy.create([
     {name: "Ube Jam", city_id: 1, desc: "The best ube jam in Baguio", weight: 23, dimensions: "2x2x2", price: 133.41, image: "ubejam_1.jpg"},
