@@ -1,5 +1,8 @@
 <div class = "container animated zoomIn" id = "padding-default-top">
-    <div class = "col-md-12">
+    <div class = "card-group">
+	<div class = "card">
+	    <%= image_tag @city.image, class: "card-img-top", alt: "Card image cap", size: "500x500" %>
+	</div>
 	<div class = "card">
 	    <div class = "card-body">
 		<h2 class = "card-title">
@@ -7,6 +10,7 @@
 		</h2>
 	    </div>
 	</div>
+    </div>
     <h3 class = "text-center py-4 text-info">Delicacies</h3>
     <div class = "card-deck">
 	<% @city.delicacies.each do |delicacy| %>
